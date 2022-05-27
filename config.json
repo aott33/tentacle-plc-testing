@@ -1,0 +1,31 @@
+{
+  "tasks" : {
+    "main": {
+      "description": "The main task",
+      "scanRate": 1000,
+      "program": "main"
+    },
+    "secondary": {
+      "description": "A less important task",
+      "scanRate": 2000,
+      "program": "secondary"
+    }
+  },
+  "mqtt" : {
+    "hiveMq1": {
+      "description": "Andrew's HiveMQ Cloud Broker",
+      "rate": 1000,
+      "config": {
+        "serverUrl": "ssl://c1952bb4996f4e33b6fee6635d6efda7.s1.eu.hivemq.cloud:8883",
+        "groupId": "Group1",
+        "username": "tentacle-plc",
+        "password": "Tentacle-plc123",
+        "edgeNode": "Edge1",
+        "deviceName": "Tentacle1",
+        "clientId": "Edge1",
+        "version": "spBv1.0"
+      }
+    }
+  },
+  "modbus": {}
+}
